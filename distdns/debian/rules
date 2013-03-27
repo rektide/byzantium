@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	install -D -m 0444 $(CURDIR)/dnsserver.py $(CURDIR)/debian/distdns/usr/lib/python2.6/dist-packages/distdns/dnsserver.py
+	install -D -m 0444 $(CURDIR)/README $(CURDIR)/debian/distdns/usr/share/doc/distdns/README

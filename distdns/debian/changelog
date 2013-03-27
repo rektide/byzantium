@@ -1,0 +1,5 @@
+distdns (2012.2.1-1) experimental; urgency=low
+
+  * Initial Debian packaging
+
+ -- rektide de la faye <rektide@voodoowarez.com>  Tues, 26 March 2013 21:54:38 +0000
